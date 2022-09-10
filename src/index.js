@@ -4,7 +4,7 @@ const cors = require('cors')
 const cookieParser = require('cookie-parser')
 const app = express();
 const path = require('path')
-const port = process.env.PORT
+const port = process.env.PORT || 5001;
 
 const corsOptions = {
   origin: "http://localhost:3000",
