@@ -1,0 +1,89 @@
+.login {
+
+    .link-login { // gestion de la balise LINK suite conflit avec CSS appliqué auparavant 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration:none; 
+    }
+    
+    .password-is-visible-login {
+        position: absolute;
+        top: 188px; 
+        right: 35px;
+        cursor: pointer;
+        color: $dark-grey;
+    }
+
+    img {
+        margin: 10px 0 10px 0;
+        width: 70px;
+        height: 70px;
+    }
+
+    h2 {
+        font-size: 15px;
+        text-align: center;
+        color: $red;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: $opacity-white;
+    }
+
+    p {
+        margin: 0 10px 0 10px;
+        font-size: 15px;
+        text-align: center;
+        color: $light-grey;
+    }
+
+    .text-rhr {
+        margin: auto;
+        font-size: 13px;
+        text-align: center;
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.217);
+        width: 100%;
+        padding: 5px;
+
+    }
+    .line_horizontal {
+        font-size: 18px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        color: $white;
+    }
+
+    .line_horizontal:before,
+    .line_horizontal:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 2px solid $white;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .btn-login {
+        margin: 10px;
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: $white;
+        color: $primary-blue;
+        font-size: 15px;
+        border: 3px solid $primary-blue;
+        cursor: pointer;
+        letter-spacing: 2px;
+        font-family: 'Avenir-bold';
+
+        &:hover {
+            background-color: $primary-blue;
+            color: $white;
+        }
+    }
+
+    .btn {
+        width: 90%;
+
+    }
+}

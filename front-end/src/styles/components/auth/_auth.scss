@@ -1,0 +1,158 @@
+.auth {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    
+
+
+    #background-video {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: saturate(1.5);
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .card-auth {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+        background-color: rgba(255, 255, 255, 0.112);
+        border-radius: 10px;
+        box-shadow: $shadow;
+        transition: all 0.3s ease-in-out;
+
+        .link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration:none; 
+         }
+
+        form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0px 10px 0px;
+
+            input {
+                margin: 10px;
+                padding: 15px;
+                width: 90%;
+                height: 50px;
+                font-size: 15px;
+                border-radius: 5px;
+                border: $border-blue;
+                align-items: center;
+            }
+            
+        }
+    }
+}
+
+.auth-dark {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    
+
+
+    #background-video {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: saturate(4.5);
+        filter: contrast(1.5);
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .card-auth {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+        background-color: #0c131f1b;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        transition: transform .9s;
+        transition: all 0.3s ease-in-out;
+
+        .link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration:none; 
+         }
+
+        &:hover {
+            transform: scale(1.04);
+        }
+
+        form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0px 10px 0px;
+
+            input {
+                margin: 10px;
+                padding: 15px;
+                width: 90%;
+                height: 50px;
+                font-size: 15px;
+                border-radius: 5px;
+                border: $border-blue;
+                align-items: center;
+                background-color: #0c131fb7;
+                color: $opacity-white;
+            }
+            
+        }
+
+        .btn-login {
+            margin: 10px;
+            width: 90%;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #0c131fb7;
+            color: $primary-blue;
+            font-size: 15px;
+            border: 3px solid $primary-blue;
+            cursor: pointer;
+            letter-spacing: 2px;
+            font-family: 'Avenir-bold';
+    
+            &:hover {
+                background-color: $primary-blue;
+                color: $white;
+            }
+        }
+    }
+}

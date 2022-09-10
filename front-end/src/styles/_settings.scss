@@ -1,0 +1,189 @@
+$primary-blue: #009AA6; // bleu canard sncf 
+$dark-grey: #4D4F53; // gris foncé sncf
+$middle-grey: #cbc8c8; // gris moyen sncf
+$light-grey: #F2F2F2; // gris léger sncf
+$white: #FFFFFF; // blanc
+$opacity-white: #ffffffc0; // blanc transparent
+$red: #D52B1E; // rouge sncf
+$border-grey: #52525298; // bordure grise
+$border-blue: 1px solid $primary-blue; // bordure bleu canard sncf
+$shadow: 0 3px 20px rgba(0, 0, 0, 0.168); // ombre à utiliser par défaut
+
+@font-face {
+  font-family: 'Avenir';
+  src:
+    url(../../public/font/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+  font-family: 'Avenir-bold';
+  src:
+    url(../../public/font/AvenirLTStd-Black.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $dark-grey;
+  font-family: 'Avenir';
+}
+
+
+
+.dark {
+  background-color: #0c131ff4;
+  transition: all 0.3s ease-in-out;
+  color: #F2F2F2;
+}
+
+.white {
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn {
+  margin: 10px auto;
+  width: 90%;
+  height: 45px;
+  border-radius: 5px;
+  background-color: $primary-blue;
+  color: $white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  
+
+
+  &:hover {
+    opacity: 0.80;
+  }
+}
+
+.btn--red {
+  margin: 10px auto;
+  width: 90%;
+  height: 45px;
+  border-radius: 5px;
+  background-color: $red;
+  color: $white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+
+
+  &:hover {
+    opacity: 0.80;
+  }
+}
+
+.btn--white {
+  margin: 10px auto;
+  width: 90%;
+  height: 45px;
+  border-radius: 5px;
+  color: $primary-blue;
+  font-size: 15px;
+  border: 2px solid $primary-blue;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: $white;
+
+  &:hover {
+    background-color: $light-grey;
+  }
+}
+
+path {
+  color: $primary-blue;
+}
+
+
+
+
+
+
+
+
+///// popup 
+
+.modal {
+  width: 370px;
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.modal2 {
+  display: flex;
+  align-items: center;
+  width: 370px;
+  height: 150px;
+  background-color: $white;
+  border-radius: 10px;
+  font-size: 22px;
+  justify-content: center;
+  text-align: center;
+  color: $dark-grey;
+  padding: 10px;
+  border: 3px solid $primary-blue;
+}
+
+.modal > .header2 {
+  background-color: $white;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 2px solid $white;
+  border-radius: 10px;
+  font-size: 26px;
+  text-align: center;
+  color: $dark-grey;
+  padding: 10px;
+  background-color: $light-grey;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid $primary-blue;
+  color: $primary-blue;
+}
+
+.modal2 > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+  
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.85);
+
+}

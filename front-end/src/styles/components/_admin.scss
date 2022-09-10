@@ -1,0 +1,178 @@
+.admin {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto;
+
+    .btn--red {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        width: 230px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: $red;
+        color: $light-grey;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 1px;
+        padding: 5px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        path {
+            color: $white;
+        }
+    }
+
+
+    h1 {
+        margin: 20px auto;
+        border-radius: 10px;
+        font-size: 20px;
+        color: $dark-grey;
+        text-align: center;
+    }
+
+    .delete-card {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        background-color: $light-grey;
+        padding: 40px;
+
+        li {
+            list-style-type: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        .user-informations {
+            width: 370px;
+            padding: 5px;
+            height: max-content;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 12px;
+            box-shadow: $shadow;
+            background-color: $white;
+
+
+            p {
+                color: $middle-grey;
+                font-size: 15px;
+                margin: 5px 10px 2px 10px;
+                span {
+                    color: $dark-grey;
+                }
+            }
+
+            .popup {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 10px;
+
+                select {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 5px auto;
+                    width: 330px;
+                    height: 30px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    text-align: center;
+                    background-color: $light-grey;
+                    
+                }
+
+                .button {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+
+                .btn {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 5px;
+                    width: 230px;
+                    margin: 5px;
+                    height: 40px;
+                    background-color: $primary-blue;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
+
+                .btn-return {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 5px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                    background-color: $middle-grey;
+                    color: $white;
+                    font-size: 12px;
+                    border: none;
+                    cursor: pointer;
+                    letter-spacing: 1px;
+                    padding: 5px;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+
+                    path {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .button-bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+
+        .btn {
+            height: 45px;
+            width: 300px;
+            font-weight: bold;
+        }
+
+        .btn-return-home {
+            height: 45px;
+            width: 300px;
+            border-radius: 5px;
+            background-color: $light-grey;
+            color: $dark-grey;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 3px;
+
+            &:hover {
+                opacity: 0.70;
+            }
+        }
+    }
+}

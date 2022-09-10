@@ -1,0 +1,112 @@
+.navbar-tab {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+
+    a {
+        text-decoration: none;
+    }
+
+
+    .tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        height: 55px;
+        border-radius: 30px;
+        background-color: $light-grey;
+        font-size: 25px;
+        
+        // media queries navbar onglet
+        @media (max-width: 1130px) {
+            width: 220px;
+            height: 55px;
+        }
+        @media (max-width: 780px) {
+            width: 160px;
+            height: 55px;
+            font-size: 30px;
+        }
+        @media (max-width: 620px) {
+            width: 100px;
+            height: 55px;
+            font-size: 30px;
+        }
+        @media (max-width: 420px) {
+            width: 80px;
+            height: 55px;
+            font-size: 35px;
+        }
+        
+        &--active {
+            background-color: $primary-blue;
+            width: 280px;
+            height: 55px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p { 
+                color: $white;
+            }
+
+            // icon navbar qui passe de couleur blanche lorsque l'onglet est actif           
+            path { 
+                color: $white
+            }
+
+            // media queries navbar onglet active
+            @media (max-width: 1130px) {
+                width: 220px;
+                height: 55px;
+            }
+            @media (max-width: 780px) {
+                width: 160px;
+                height: 55px;
+                font-size: 30px;
+            }
+            @media (max-width: 620px) {
+                width: 100px;
+                height: 55px;
+                font-size: 30px;
+            }
+            @media (max-width: 420px) {
+                width: 80px;
+                height: 55px;
+                font-size: 35px;
+            }
+        }  
+
+        p {
+            letter-spacing: 3px;
+            font-size: 25px;
+
+            // media queries supression texte navbar
+            @media (max-width: 780px) {
+                display: none;
+            }
+        }
+
+    }
+
+    .tab-return {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 55px;
+        border-radius: 30px;
+        background-color: $light-grey;
+        font-size: 25px;
+        letter-spacing: 3px;
+
+        @media (max-width: 420px) {
+            width: 80px;
+            height: 55px;
+            font-size: 35px;
+        }
+    }
+}

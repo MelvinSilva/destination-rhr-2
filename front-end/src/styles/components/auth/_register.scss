@@ -1,0 +1,67 @@
+.register {
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .link-register {
+        text-align: center;
+        width: 100%;
+        text-decoration:none; 
+    }
+
+    .password-is-visible-register {
+        position: absolute;
+        top: 306px; 
+        right: 35px;
+        cursor: pointer;
+        color: $dark-grey;
+    }
+
+    p {
+        text-align: center;
+        color: $dark-grey;
+        background-color: $opacity-white;
+        padding: 3px;
+        margin: 0 20px;
+        border-radius: 20px;
+        font-size: 10px;
+        width: 90%;
+    }
+    input {
+        height: 200px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    h2 {
+        width: 90%;
+        font-size: 20px;
+        text-align: center;
+        color: $red;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: $opacity-white;
+    }
+
+    .btn-return-home {
+        margin: 10px;
+        height: 45px;
+        width: 350px;
+        border-radius: 5px;
+        background-color: $opacity-white;
+        color: $dark-grey;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 3px;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $light-grey;
+        }
+
+    }
+}

@@ -1,0 +1,35 @@
+.no-result {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+    img {
+        width: 370px;
+        height: 250px;
+        filter: saturate(2)
+    }
+
+    .loading {
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+
+    }
+
+    h1 {
+        margin: 10px;
+        width: 370px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 10px;
+        width: 150px;
+        height: 30px;
+        background-color: $middle-grey;
+    }
+}

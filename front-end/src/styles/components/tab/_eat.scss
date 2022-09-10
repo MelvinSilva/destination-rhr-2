@@ -1,0 +1,209 @@
+.choice-eat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    background-image: url(../../../../public/images/bg-eat.png);
+    background-size: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out;
+  
+    
+
+    h1 {
+        margin: 30px auto;
+        border-radius: 13px;
+        font-size: 22px;
+        color: $dark-grey;
+        text-align: center;
+        border-bottom: 4px solid $primary-blue;
+        border-top: 1px solid $primary-blue;
+        padding: 5px;
+    }
+    .container-card {
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+
+        li {
+            list-style-type: none;
+        }
+        .container-global {
+            width: 370px;
+            margin: 10px auto;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 12px;
+            box-shadow: $shadow;
+            background-color: $white;
+            padding-top: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        p {
+            margin: 10px 10px;
+        }
+        .container-top {
+            height: 160px;
+            width: 370px;
+
+            h2 {
+                font-size: 17px;
+                font-family: 'Avenir-bold';
+                letter-spacing: 1px;
+                text-align: center;
+                color: $primary-blue;
+            }
+
+            h3 {
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-align: center;
+                padding: 5px;
+                color: $middle-grey;
+            }
+            hr {
+                border: 1px solid $primary-blue;
+                margin: 5px 0 15px 0;
+            }
+
+            span {
+                margin-left: 10px;
+                border-radius: 25% 10%;
+                background-color: $red;
+                padding: 10px;
+                color: white;
+                font-weight: 900;
+            }
+        }
+        .container-bottom {
+            width: 370px;
+            text-align: center;
+            img {
+                width: 320px;
+                height: 170px;
+                background-size: cover;
+                border-radius: 10px;
+            }
+            h3 {
+                font-size: 10px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-align: center;
+                padding: 5px;
+                color: $dark-grey;
+            }
+        }
+    }
+}
+
+.choice-eat-dark {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    background-image: url(../../../../public/images/bg-eat.png);
+    background-size: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out;
+  
+
+    h1 {
+        margin: 30px auto;
+        border-radius: 13px;
+        font-size: 22px;
+        color: $dark-grey;
+        text-align: center;
+        border-bottom: 4px solid $primary-blue;
+        border-top: 1px solid $primary-blue;
+        padding: 5px;
+    }
+    .container-card {
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+
+        li {
+            list-style-type: none;
+        }
+        .container-global {
+            width: 370px;
+            margin: 10px auto;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 12px;
+            box-shadow: $shadow;
+            background-color: #0c131f;
+            padding-top: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        p {
+            margin: 10px 10px;
+            color: white;
+        }
+        .container-top {
+            height: 160px;
+            width: 370px;
+            
+            strong {
+                color: $middle-grey;
+            }
+
+            h2 {
+                font-size: 17px;
+                font-family: 'Avenir-bold';
+                letter-spacing: 1px;
+                text-align: center;
+                color: $primary-blue;
+            }
+
+            h3 {
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-align: center;
+                padding: 5px;
+                color: $middle-grey;
+            }
+            hr {
+                border: 1px solid $primary-blue;
+                margin: 5px 0 15px 0;
+            }
+
+            span {
+                margin-left: 10px;
+                border-radius: 25% 10%;
+                background-color: $red;
+                padding: 10px;
+                color: white;
+                font-weight: 900;
+            }
+        }
+        .container-bottom {
+            width: 370px;
+            text-align: center;
+            img {
+                width: 320px;
+                height: 170px;
+                background-size: cover;
+                border-radius: 10px;
+            }
+            h3 {
+                font-size: 10px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-align: center;
+                padding: 5px;
+                color: $light-grey;
+            }
+        }
+    }
+}
